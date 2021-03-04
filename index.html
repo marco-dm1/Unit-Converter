@@ -1,17 +1,39 @@
 <html>
 <head>
   <title>Unit Converter</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="page">
     <div id="header">
-                    
+      <h1>Unit Converter</h1>
+      Easily convert values from one unit to another!
     </div>
     <div id="content">
-                     
+      content text
+      <div id="conversionForm">
+        <input id="initialValue" type="number" placeholder="Enter Number to Convert">
+        <select name="dropdownBox" id="initialUnit">
+          <option value="mile">Mile(s)</option>
+          <option value="kilometer">Kilometer(s)</option>
+        </select>
+        <h1>To</h1>
+        <select name="dropdownBox" id="convertUnit">
+          <option value="mile">Mile(s)</option>
+          <option value="kilometer">Kilometer(s)</option>
+        </select>
+        Converted:
+        <input id="convertedValue" type="number">
+        <button onclick=convertValues()>Convert!</button>
+      </div>
     </div>
+    <script src="script.js"></script>
     <div id="footer">
-    
+      Demo of frontend development with HTML, CSS, and JS. (source: <a href="https://github.com/marco-dm1/Unit-Converter">github/Unit-Converter</a>)
+      <hr/>
+      marco-dm1 - 2020
     </div>
   </div>
 </body>
